@@ -1,4 +1,4 @@
-public class LargestPalindrome{
+public class largestpalindrome{
     public static void main(String[] args) {
         int largestPalindrome = 0;
         int product;
@@ -11,16 +11,16 @@ public class LargestPalindrome{
             }
         }
         
-        System.out.println("The largest palindrome made from the product of two 3-digit numbers is: " + largestPalindrome);
+        System.out.println("The largest palindrome of product is: " + largestPalindrome);
     }
     public static boolean isPalindrome(int number) {
         int reverse = 0;
-        int originalNumber = number;
+        int Number = number;
         while (number != 0) {
             int digit = number % 10;
             reverse = reverse * 10 + digit;
             number /= 10;
         }
-        return originalNumber == reverse;
+        return Number == reverse;
     }
 }
